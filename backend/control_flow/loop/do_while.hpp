@@ -1,0 +1,47 @@
+#ifndef BACKEND_CONTROLFLOW_LOOP_DOWHILE
+#define BACKEND_CONTROLFLOW_LOOP_DOWHILE
+
+
+
+#include <iostream>
+#include <memory>
+
+#include "../../../menu/_init.hpp"
+
+#include "../../program_menu.hpp"
+#include "../../path.hpp"
+
+
+
+namespace Loop {
+    class DoWhile : public ProgramMenu {
+        public:
+            DoWhile() : ProgramMenu() {
+                // Setting menu's title and description
+                this->title = File::read_str_file(backend_path + "control_flow/loop/do_while_title.txt");
+                this->desc = "Looping through code using a 'do-while' loop.";
+                // TODO creator
+            };
+
+
+            void run_program() override {
+                int c = 1;
+                do {
+                    std::cout << "The value of c is: " << c;
+                    c++;
+                } while (c <= 10);
+            };
+    };
+
+	class DoWhileChoice : public ConsMenu::Choice {
+        public:
+            DoWhileChoice() : ConsMenu::Choice() {
+                this->description = "Do-While";
+                this->menu = std::make_unique<DoWhile>(DoWhile());
+            };
+	};
+};
+
+
+
+#endif
