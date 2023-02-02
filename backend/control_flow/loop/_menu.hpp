@@ -5,11 +5,11 @@
 
 #include <memory>
 
-#include "../../../menu/_init.hpp"
+#include <menu/_init.hpp>
 
-#include "./for.hpp"
-#include "./while.hpp"
-#include "./do_while.hpp"
+#include "./for/_menu.hpp"
+#include "./while/_menu.hpp"
+#include "./do_while/_menu.hpp"
 
 
 

@@ -5,14 +5,14 @@
 
 #include <memory>
 
-#include "../../menu/_init.hpp"
+#include <menu/_init.hpp>
 
-#include "./hello_world.hpp"
-#include "./introduction.hpp"
-#include "./syntax.hpp"
-#include "./variables.hpp"
-#include "./comments.hpp"
-#include "./input_output.hpp"
+#include "./hello_world/_menu.hpp"
+#include "./introduction/_menu.hpp"
+#include "./syntax/_menu.hpp"
+#include "./variables/_menu.hpp"
+#include "./comments/_menu.hpp"
+#include "./input_output/_menu.hpp"
 
 
 

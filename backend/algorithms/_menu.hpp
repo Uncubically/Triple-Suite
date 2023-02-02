@@ -5,12 +5,12 @@
 
 #include <memory>
 
-#include "../../menu/_init.hpp"
+#include <menu/_init.hpp>
 
-#include "./check_leap_year.hpp"
-#include "./largest_element.hpp"
-#include "./number_swap.hpp"
-#include "./string_length.hpp"
+#include "./check_leap_year/_menu.hpp"
+#include "./largest_element/_menu.hpp"
+#include "./number_swap/_menu.hpp"
+#include "./string_length/_menu.hpp"
 
 
 

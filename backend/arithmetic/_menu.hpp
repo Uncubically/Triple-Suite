@@ -5,13 +5,13 @@
 
 #include <memory>
 
-#include "../../menu/_init.hpp"
+#include <menu/_init.hpp>
 
-#include "./is_prime_number.hpp"
-#include "./mdas.hpp"
-#include "./mult_table.hpp"
-#include "./number_factor.hpp"
-#include "./odd_even.hpp"
+#include "./is_prime_number/_menu.hpp"
+#include "./mdas/_menu.hpp"
+#include "./mult_table/_menu.hpp"
+#include "./number_factor/_menu.hpp"
+#include "./odd_even/_menu.hpp"
 
 
 

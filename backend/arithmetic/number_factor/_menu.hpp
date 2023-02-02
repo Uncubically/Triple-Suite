@@ -1,0 +1,52 @@
+#ifndef BACKEND_ARITHMETIC_NUMBERFACTOR
+#define BACKEND_ARITHMETIC_NUMBERFACTOR
+
+
+
+#include <iostream>
+#include <memory>
+
+#include <menu/_init.hpp>
+
+#include <backend/program_menu.hpp>
+#include <backend/path.hpp>
+
+
+
+namespace Arithmetic {
+    class NumberFactor : public ProgramMenu {
+        public:
+            NumberFactor() : ProgramMenu() {
+                // Setting menu's title and description
+                this->title = File::read_str_file(backend_path + "arithmetic/number_factor/title.txt");
+                this->desc = "Finds all factors of a number.";
+                this->creator = DevGroup::JCC_TUTORIAL_PROGRAM;
+            };
+
+
+            void run_program() override {
+                int n, i;
+
+                std::cout << "Enter a positive integer: ";
+                std::cin >> n;
+
+                std::cout << "Factors of " << n << " are: ";  
+                for(i = 1; i <= n; ++i) {
+                    if(n % i == 0)
+                        std::cout << i << ", ";
+                };
+            };
+    };
+
+    class NumberFactorChoice : public ConsMenu::Choice {
+        public:
+            NumberFactorChoice() : ConsMenu::Choice() {
+                this->description = "Number Factor";
+                this->menu = std::make_unique<NumberFactor>(NumberFactor());
+            };
+    };
+};
+
+
+
+#endif

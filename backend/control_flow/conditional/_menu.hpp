@@ -5,12 +5,12 @@
 
 #include <memory>
 
-#include "../../../menu/_init.hpp"
+#include <menu/_init.hpp>
 
-#include "./if.hpp"
-#include "./if_else.hpp"
-#include "./else_if.hpp"
-#include "./switch.hpp"
+#include "./if/_menu.hpp"
+#include "./if_else/_menu.hpp"
+#include "./else_if/_menu.hpp"
+#include "./switch/_menu.hpp"
 
 
 
