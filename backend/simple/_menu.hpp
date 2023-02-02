@@ -6,7 +6,13 @@
 #include <memory>
 
 #include "../../menu/_init.hpp"
+
 #include "./hello_world.hpp"
+#include "./introduction.hpp"
+#include "./syntax.hpp"
+#include "./variables.hpp"
+#include "./comments.hpp"
+#include "./input_output.hpp"
 
 
 
@@ -19,6 +25,11 @@ namespace Simple {
                 this->desc = "Simple programs to start off your journey.";
 
                 this->choices.push_back(std::make_unique<HelloWorldChoice>(HelloWorldChoice()));
+                this->choices.push_back(std::make_unique<IntroductionChoice>(IntroductionChoice()));
+                this->choices.push_back(std::make_unique<SyntaxChoice>(SyntaxChoice()));
+                this->choices.push_back(std::make_unique<VariablesChoice>(VariablesChoice()));
+                this->choices.push_back(std::make_unique<CommentsChoice>(CommentsChoice()));
+                this->choices.push_back(std::make_unique<InputOutputChoice>(InputOutputChoice()));
             };
     };
 
