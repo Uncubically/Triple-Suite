@@ -9,6 +9,7 @@
                 "${workspaceFolder}/main.cpp",
                 "-o",
                 "${workspaceFolder}/main.exe",
+                "-I${workspaceFolder}",
                 "-Wfatal-errors"
             ],
             "options": {

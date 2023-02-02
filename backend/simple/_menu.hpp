@@ -15,6 +15,7 @@
 #include "./input_output/_menu.hpp"
 #include "./birthday/_menu.hpp"
 #include "./computer/_menu.hpp"
+#include "./your_name/_menu.hpp"
 
 
 
@@ -26,14 +27,20 @@ namespace Simple {
                 this->title = "Simple Programs";
                 this->desc = "Simple programs to start off your journey.";
 
-                this->choices.push_back(std::make_unique<HelloWorldChoice>(HelloWorldChoice()));
-                this->choices.push_back(std::make_unique<IntroductionChoice>(IntroductionChoice()));
-                this->choices.push_back(std::make_unique<SyntaxChoice>(SyntaxChoice()));
-                this->choices.push_back(std::make_unique<VariablesChoice>(VariablesChoice()));
-                this->choices.push_back(std::make_unique<CommentsChoice>(CommentsChoice()));
-                this->choices.push_back(std::make_unique<InputOutputChoice>(InputOutputChoice()));
-                this->choices.push_back(std::make_unique<BirthdayChoice>(BirthdayChoice()));
-                this->choices.push_back(std::make_unique<ComputerChoice>(ComputerChoice()));
+                this->choices.insert(
+                    this->choices.end(),
+                    {
+                        std::make_unique<HelloWorldChoice>(HelloWorldChoice()),
+                        std::make_unique<IntroductionChoice>(IntroductionChoice()),
+                        std::make_unique<SyntaxChoice>(SyntaxChoice()),
+                        std::make_unique<VariablesChoice>(VariablesChoice()),
+                        std::make_unique<CommentsChoice>(CommentsChoice()),
+                        std::make_unique<InputOutputChoice>(InputOutputChoice()),
+                        std::make_unique<BirthdayChoice>(BirthdayChoice()),
+                        std::make_unique<ComputerChoice>(ComputerChoice()),
+                        std::make_unique<YourNameChoice>(YourNameChoice())
+                    }
+                );
             };
     };
 
