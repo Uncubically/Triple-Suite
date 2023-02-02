@@ -13,7 +13,7 @@
 
 
 
-namespace Loop {
+namespace Looping {
     class DoWhile : public ProgramMenu {
         public:
             DoWhile() : ProgramMenu() {

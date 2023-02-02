@@ -7,6 +7,11 @@
 
 #include "../../../menu/_init.hpp"
 
+#include "./if.hpp"
+#include "./if_else.hpp"
+#include "./else_if.hpp"
+#include "./switch.hpp"
+
 
 
 namespace Conditional {
@@ -16,6 +21,11 @@ namespace Conditional {
             ConditionalMenu() : ConsMenu::SelectMenu() {
                 this->title = "Conditional";
                 this->desc = "Programs relating to conditions.";
+
+                this->choices.push_back(std::make_unique<IfChoice>(IfChoice()));
+                this->choices.push_back(std::make_unique<IfElseChoice>(IfElseChoice()));
+                this->choices.push_back(std::make_unique<ElseIfChoice>(ElseIfChoice()));
+                this->choices.push_back(std::make_unique<SwitchChoice>(SwitchChoice()));
             };
     };
 

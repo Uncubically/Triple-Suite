@@ -13,7 +13,7 @@
 
 
 
-namespace Loop {
+namespace Looping {
     class While : public ProgramMenu {
         public:
             While() : ProgramMenu() {

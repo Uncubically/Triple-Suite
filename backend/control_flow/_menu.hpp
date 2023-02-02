@@ -7,6 +7,9 @@
 
 #include "../../menu/_init.hpp"
 
+#include "./conditional/_menu.hpp"
+#include "./loop/_menu.hpp"
+
 
 
 namespace ControlFlow {
@@ -16,6 +19,9 @@ namespace ControlFlow {
             ControlFlowMenu() : ConsMenu::SelectMenu() {
                 this->title = "Control Flow";
                 this->desc = "Programs relating to how the program moves across its statements.";
+
+                this->choices.push_back(std::make_unique<Conditional::ConditionalChoice>(Conditional::ConditionalChoice()));
+                this->choices.push_back(std::make_unique<Looping::LoopChoice>(Looping::LoopChoice()));
             };
     };
 

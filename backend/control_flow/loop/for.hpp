@@ -13,7 +13,7 @@
 
 
 
-namespace Loop {
+namespace Looping {
     class For : public ProgramMenu {
         public:
             For() : ProgramMenu() {
