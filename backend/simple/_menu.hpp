@@ -13,6 +13,8 @@
 #include "./variables/_menu.hpp"
 #include "./comments/_menu.hpp"
 #include "./input_output/_menu.hpp"
+#include "./birthday/_menu.hpp"
+#include "./computer/_menu.hpp"
 
 
 
@@ -30,6 +32,8 @@ namespace Simple {
                 this->choices.push_back(std::make_unique<VariablesChoice>(VariablesChoice()));
                 this->choices.push_back(std::make_unique<CommentsChoice>(CommentsChoice()));
                 this->choices.push_back(std::make_unique<InputOutputChoice>(InputOutputChoice()));
+                this->choices.push_back(std::make_unique<BirthdayChoice>(BirthdayChoice()));
+                this->choices.push_back(std::make_unique<ComputerChoice>(ComputerChoice()));
             };
     };
 
