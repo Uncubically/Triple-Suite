@@ -18,7 +18,7 @@ namespace Shapes {
         public:
             ParallArea() : ProgramMenu() {
                 // Setting menu's title and description
-                this->title = File::read_str_file(backend_path + "arithmetic/calculator/parall_area/title.txt");
+                this->title = File::read_str_file(backend_path + "arithmetic/shapes/parall_area/title.txt");
                 this->desc = "Finds the area of a parallelogram.";
                 this->creator = DevGroup::C_FOR_ALL;
             };

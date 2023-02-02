@@ -18,7 +18,7 @@ namespace Shapes {
         public:
             CircleCircum() : ProgramMenu() {
                 // Setting menu's title and description
-                this->title = File::read_str_file(backend_path + "arithmetic/calculator/circle_circum/title.txt");
+                this->title = File::read_str_file(backend_path + "arithmetic/shapes/circle_circum/title.txt");
                 this->desc = "Finds the circumference of a circle.";
                 this->creator = DevGroup::C_FOR_ALL;
             };

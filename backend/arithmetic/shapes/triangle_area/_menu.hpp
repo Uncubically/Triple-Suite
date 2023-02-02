@@ -18,7 +18,7 @@ namespace Shapes {
         public:
             TriangleArea() : ProgramMenu() {
                 // Setting menu's title and description
-                this->title = File::read_str_file(backend_path + "arithmetic/calculator/triangle_area/title.txt");
+                this->title = File::read_str_file(backend_path + "arithmetic/shapes/triangle_area/title.txt");
                 this->desc = "Finds the area of a triangle.";
                 this->creator = DevGroup::C_FOR_ALL;
             };

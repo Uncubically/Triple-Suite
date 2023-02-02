@@ -18,7 +18,7 @@ namespace Shapes {
         public:
             CircleArea() : ProgramMenu() {
                 // Setting menu's title and description
-                this->title = File::read_str_file(backend_path + "arithmetic/calculator/circle_area/title.txt");
+                this->title = File::read_str_file(backend_path + "arithmetic/shapes/circle_area/title.txt");
                 this->desc = "Finds the area of a circle.";
                 this->creator = DevGroup::C_FOR_ALL;
             };

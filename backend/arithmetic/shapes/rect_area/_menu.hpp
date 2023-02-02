@@ -18,7 +18,7 @@ namespace Shapes {
         public:
             RectArea() : ProgramMenu() {
                 // Setting menu's title and description
-                this->title = File::read_str_file(backend_path + "arithmetic/calculator/rect_area/title.txt");
+                this->title = File::read_str_file(backend_path + "arithmetic/shapes/rect_area/title.txt");
                 this->desc = "Finds the area of a rectangle.";
                 this->creator = DevGroup::C_FOR_ALL;
             };

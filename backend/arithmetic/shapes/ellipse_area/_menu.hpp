@@ -18,7 +18,7 @@ namespace Shapes {
         public:
             EllipseArea() : ProgramMenu() {
                 // Setting menu's title and description
-                this->title = File::read_str_file(backend_path + "arithmetic/calculator/ellipse_area/title.txt");
+                this->title = File::read_str_file(backend_path + "arithmetic/shapes/ellipse_area/title.txt");
                 this->desc = "Finds the area of an ellipse.";
                 this->creator = DevGroup::C_FOR_ALL;
             };

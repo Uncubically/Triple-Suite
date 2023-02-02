@@ -18,7 +18,7 @@ namespace Shapes {
         public:
             TrapezoidArea() : ProgramMenu() {
                 // Setting menu's title and description
-                this->title = File::read_str_file(backend_path + "arithmetic/calculator/trapezoid_area/title.txt");
+                this->title = File::read_str_file(backend_path + "arithmetic/shapes/trapezoid_area/title.txt");
                 this->desc = "Finds the area of a trapezoid.";
                 this->creator = DevGroup::C_FOR_ALL;
             };
