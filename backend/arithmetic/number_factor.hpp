@@ -20,6 +20,7 @@ namespace Arithmetic {
                 // Setting menu's title and description
                 this->title = File::read_str_file(backend_path + "arithmetic/number_factor_title.txt");
                 this->desc = "Finds all factors of a number.";
+                this->creator = DevGroup::JCC_TUTORIAL_PROGRAM;
             };
 
 

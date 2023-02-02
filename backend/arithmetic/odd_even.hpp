@@ -20,6 +20,7 @@ namespace Arithmetic {
                 // Setting menu's title and description
                 this->title = File::read_str_file(backend_path + "arithmetic/odd_even_title.txt");;
                 this->desc = "Showcasing the modulo % operator.";
+                this->creator = DevGroup::JCC_TUTORIAL_PROGRAM;
             };
 
 

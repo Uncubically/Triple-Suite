@@ -19,6 +19,7 @@ namespace Arithmetic {
                 // Setting menu's title and description
                 this->title = File::read_str_file(backend_path + "arithmetic/mult_table_title.txt");
                 this->desc = "Generates a multiplication table.";
+                this->creator = DevGroup::JCC_TUTORIAL_PROGRAM;
             };
 
 

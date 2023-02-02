@@ -54,7 +54,7 @@ namespace ConsMenu {
             /*
             Shows the header, which includes the title, description, and borders.
             */
-            void show_header() {
+            virtual void show_header() {
                 Console::Color::SpecStyle base = Console::Color::SpecStyle::from_genstyle(this->base_color);
 
                 this->show_border();

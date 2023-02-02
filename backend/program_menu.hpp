@@ -2,20 +2,50 @@
 #define BACKEND_PROGRAMMENU
 
 
+#include <string>
 
 #include "../cpp_utils/_init.hpp"
 #include "../menu/_init.hpp"
 
 
+
+enum DevGroup {
+    JCC_TUTORIAL_PROGRAM,
+    C_FOR_ALL,
+    // TODO
+};
+
+std::string dev_groups[] = {
+    "James Chris Brown C++ Tutorial Program",
+    "C++ For All"
+    // TODO
+};
+
+
 // A type of menu where a program can be run.
 class ProgramMenu : public ConsMenu::Menu {
     public:
+        DevGroup creator;
+
+        void show_header() override {
+            Console::Color::SpecStyle base = Console::Color::SpecStyle::from_genstyle(this->base_color);
+
+            this->show_border();
+            std::cout
+                << this->title_specstyle.get_str() << this->title << std::endl
+                << this->desc_specstyle.get_str() << this->desc << std::endl
+                << "This program was created by " << dev_groups[this->creator] << "." << std::endl;
+            this->show_border();
+            std::cout << base.get_str() << std::endl;
+        };
+
+
         // Runs the program.
         virtual void run_program() {};
 
         void show() override {
             Console::clear_console();
-            ConsMenu::Menu::show_header();
+            this->show_header();
 
             Console::flush_streams();
 

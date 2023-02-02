@@ -20,6 +20,7 @@ namespace Arithmetic {
                 // Setting menu's title and description
                 this->title = File::read_str_file(backend_path + "arithmetic/is_prime_number_title.txt");
                 this->desc = "Checks if the number is prime.";
+                this->creator = DevGroup::JCC_TUTORIAL_PROGRAM;
             };
 
 

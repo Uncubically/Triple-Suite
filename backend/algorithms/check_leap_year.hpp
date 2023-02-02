@@ -20,6 +20,7 @@ namespace Algorithms {
                 // Setting menu's title and description
                 this->title = File::read_str_file(backend_path + "algorithms/check_leap_year_title.txt");
                 this->desc = "Checks if the year is a leap year according to certain standards.";
+                this->creator = DevGroup::JCC_TUTORIAL_PROGRAM;
             };
 
 

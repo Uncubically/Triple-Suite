@@ -20,6 +20,7 @@ namespace Algorithms {
                 // Setting menu's title and description
                 this->title = File::read_str_file(backend_path + "algorithms/string_length_title.txt");
                 this->desc = "Counts how many characters there are in the input.";
+                this->creator = DevGroup::JCC_TUTORIAL_PROGRAM;
             };
 
 

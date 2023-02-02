@@ -20,6 +20,7 @@ namespace Arithmetic {
 				// Setting menu's title and description
                 this->title = File::read_str_file(backend_path + "arithmetic/mdas_title.txt");
                 this->desc = "Multiplication, division, addition, and subtraction.";
+				this->creator = DevGroup::JCC_TUTORIAL_PROGRAM;
             };
 
 

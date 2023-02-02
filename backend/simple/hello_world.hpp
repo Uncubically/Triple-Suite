@@ -18,13 +18,14 @@ namespace Simple {
         public:
             HelloWorld() : ProgramMenu() {
                 // Setting menu's title and description
-                this->title = File::read_str_file(backend_path + "simple/hello_world_text.txt");
+                this->title = File::read_str_file(backend_path + "simple/hello_world_title.txt");
                 this->desc = "A simple \"Hello World!\" program, a tradition to any programming language.";
+                this->creator = DevGroup::JCC_TUTORIAL_PROGRAM;
             };
 
 
             void run_program() override {
-                std::cout << "Hello world!";
+                std::cout << "Hello World!";
             };
     };
 
