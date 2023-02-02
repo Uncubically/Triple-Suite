@@ -11,6 +11,7 @@
 #include "./largest_element/_menu.hpp"
 #include "./number_swap/_menu.hpp"
 #include "./string_length/_menu.hpp"
+#include "./magic_number/_menu.hpp"
 
 
 
@@ -26,6 +27,7 @@ namespace Algorithms {
                 this->choices.push_back(std::make_unique<NumberSwapChoice>(NumberSwapChoice()));
                 this->choices.push_back(std::make_unique<LargestElementChoice>(LargestElementChoice()));
                 this->choices.push_back(std::make_unique<LeapYearChoice>(LeapYearChoice()));
+                this->choices.push_back(std::make_unique<MagicNumberChoice>(MagicNumberChoice()));
             };
     };
 
