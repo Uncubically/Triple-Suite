@@ -12,8 +12,6 @@ int main() {
         << "Please maximize the window." << std::endl
         << "Press enter to run the program." << std::endl;
 
-    std::cout << backend_path;
-
     Console::enter_to_exit(false);
 
 
