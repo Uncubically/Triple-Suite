@@ -27,13 +27,13 @@ namespace Shapes {
             void run_program() override {
                 float basetop, basebot, height, area;
 
-                std::cout << "Enter value of base top:";
+                std::cout << "Enter value of base top: ";
                 std::cin >> basetop;
 
-                std::cout << "Enter value of base bot:";
+                std::cout << "Enter value of base bot: ";
                 std::cin >> basebot;
 
-                std::cout << "Enter value of height:";
+                std::cout << "Enter value of height: ";
                 std::cin >> height;
 
                 area = (basetop + basebot) / (2 * height);

@@ -27,7 +27,7 @@ namespace Shapes {
             void run_program() override {
                 float radius,circumference; //declaring a variable
 
-                std::cout << "Enter vaue of radius:";
+                std::cout << "Enter vaue of radius: ";
                 std::cin >> radius;
 
                 circumference = 2 * 3.141592 * radius;

@@ -27,10 +27,10 @@ namespace Shapes {
             void run_program() override {
                 float axis_x, axis_y, area;
 
-                std::cout << "Enter value of X:";
+                std::cout << "Enter value of X: ";
                 std::cin >> axis_x;
 
-                std::cout << "Enter value of Y:";
+                std::cout << "Enter value of Y: ";
                 std::cin >> axis_y;
 
                 area = 3.14 * axis_x * axis_y;

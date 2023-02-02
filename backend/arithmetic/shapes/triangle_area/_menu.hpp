@@ -27,10 +27,10 @@ namespace Shapes {
             void run_program() override {
                 float base, height, area;
 
-                std::cout<<"Enter value of base:";
+                std::cout<<"Enter value of base: ";
                 std::cin>>base;
 
-                std::cout<<"Enter value of height:";
+                std::cout<<"Enter value of height: ";
                 std::cin>>height;
 
                 area = (base * height) / 2;

@@ -27,7 +27,7 @@ namespace Shapes {
             void run_program() override {
                 float radius, area;
 
-                std::cout<<"\t\tEnter value of radius:";
+                std::cout<<"Enter value of radius: ";
                 std::cin>>radius;
                 area = 3.14 * radius * radius;
 
