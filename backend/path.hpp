@@ -4,10 +4,23 @@
 
 
 #include <iostream>
+#include <string>
+#include <filesystem>
+
+
+std::string get_backend_path() {
+    std::filesystem::path path = __FILE__;
+    path = path / "..";
+
+    std::stringstream ss;
+    ss << path;
+    std::string path_str = ss.str();
+    return path_str.substr(1, path_str.size() - 2) + "/";
+}
 
 
 // The path of the folder.
-const std::string backend_path = "D:\\Xander Files\\[1] cluster\\[3] school\\[2] college\\year 1\\sem 1\\subjects\\FUN PROG\\defense\\triple-\\backend\\";
+const std::string backend_path = get_backend_path();
 
 
 
