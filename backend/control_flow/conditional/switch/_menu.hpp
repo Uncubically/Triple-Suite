@@ -20,7 +20,7 @@ namespace Conditional {
                 // Setting menu's title and description
                 this->title = File::read_str_file(backend_path + "control_flow/conditional/switch/title.txt");
                 this->desc = "Conditional multi-branching for branches > 2 using switch statements.";
-                // TODO creator
+                this->creator = DevGroup::PMAKCJ;
             };
 
 

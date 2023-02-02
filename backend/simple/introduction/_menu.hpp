@@ -21,7 +21,7 @@ namespace Simple {
                 // Setting menu's title and description
                 this->title = File::read_str_file(backend_path + "simple/introduction/title.txt");
                 this->desc = "Contains the introduction of C++.";
-                // TODO this->creator = DevGroup::JCC_TUTORIAL_PROGRAM;
+                this->creator = DevGroup::PMAKCJ;
             };
 
 

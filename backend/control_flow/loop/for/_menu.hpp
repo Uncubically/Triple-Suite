@@ -20,7 +20,7 @@ namespace Looping {
                 // Setting menu's title and description
                 this->title = File::read_str_file(backend_path + "control_flow/loop/for/title.txt");
                 this->desc = "Looping through code using a 'for' loop.";
-                // TODO creator
+                this->creator = DevGroup::PMAKCJ;
             };
 
 

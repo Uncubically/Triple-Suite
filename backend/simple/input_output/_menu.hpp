@@ -20,7 +20,7 @@ namespace Simple {
                 // Setting menu's title and description
                 this->title = File::read_str_file(backend_path + "simple/input_output/title.txt");
                 this->desc = "Contains information about taking inputs and outputting.";
-                // TODO this->creator = DevGroup::JCC_TUTORIAL_PROGRAM;
+                this->creator = DevGroup::PMAKCJ;
             };
 
 

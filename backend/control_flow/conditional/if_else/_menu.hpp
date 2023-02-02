@@ -20,7 +20,7 @@ namespace Conditional {
                 // Setting menu's title and description
                 this->title = File::read_str_file(backend_path + "control_flow/conditional/if_else/title.txt");
                 this->desc = "Contains information about the \"if\" and \"else\" keywords and conditional multi-branching.";
-                // TODO creator
+                this->creator = DevGroup::PMAKCJ;
             };
 
 

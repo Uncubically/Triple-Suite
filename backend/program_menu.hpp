@@ -12,13 +12,13 @@
 enum DevGroup {
     JCC_TUTORIAL_PROGRAM,
     C_FOR_ALL,
-    // TODO
+    PMAKCJ
 };
 
 std::string dev_groups[] = {
     "James Chris Brown C++ Tutorial Program",
-    "C++ For All"
-    // TODO
+    "C++ For All",
+    "PMAKCJ C++ Tutorials"
 };
 
 
