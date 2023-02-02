@@ -27,7 +27,7 @@ namespace Conditional {
             void run_program() override {
                 int grade;
 
-                std::cout << "Enter your grade:";
+                std::cout << "Enter your grade: ";
                 std::cin >> grade;
                 std::cout << std::endl;
 

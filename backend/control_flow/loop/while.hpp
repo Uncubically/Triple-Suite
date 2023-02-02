@@ -27,7 +27,7 @@ namespace Looping {
             void run_program() override {
                 int b = 1;
                 while (b <= 10) {
-                    std::cout << "The value of b is: " << b;
+                    std::cout << "The value of b is: " << b << std::endl;
                     b++;
                 }
             };

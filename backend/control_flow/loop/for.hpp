@@ -26,7 +26,7 @@ namespace Looping {
 
             void run_program() override {
                 for (int a = 1; a <= 10; a++) {
-                    std::cout << "The value of a is: " << a;
+                    std::cout << "The value of a is: " << a << std::endl;
                 }
             };
     };

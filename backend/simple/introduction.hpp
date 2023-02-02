@@ -5,6 +5,7 @@
 
 #include <iostream>
 #include <memory>
+#include <string>
 
 #include "../../menu/_init.hpp"
 
@@ -25,7 +26,8 @@ namespace Simple {
 
 
             void run_program() override {
-                std::cout << File::read_str_file(backend_path + "simple/introduction_text.txt");
+                std::string test = File::read_str_file(backend_path + "simple/introduction_text.txt");
+                std::cout << test;
             };
     };
 
@@ -33,7 +35,7 @@ namespace Simple {
     class IntroductionChoice : public ConsMenu::Choice {
         public:
             IntroductionChoice() : ConsMenu::Choice() {
-                this->description = "Syntax";
+                this->description = "Introduction";
                 this->menu = std::make_unique<Introduction>(Introduction());
             };
     };
