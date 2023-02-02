@@ -516,6 +516,7 @@ int main()
 			break;
 			
 			case 10:
+			/*
 			cout<<"\tC++ Switch\n\n";
 			cout<<"\tUse the switch statement to select one of many code blocks to be executed.\n\n";
 			cout<<"\tSyntax: \n";		
@@ -563,6 +564,7 @@ int main()
 			cout<<"\ttime for a break. There is no need for more testing."<<endl;
 			cout<<"\n\tThe default keyword specifies some code to run if there is no case match.\n";
 			cout<<"\n";
+			*/
 		    cout<<"++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n";
 		cout<<"\t\t\t\t*******************************************************************\n";
 		cout<<"\t\t\t\t*******************************************************************\n";
@@ -586,6 +588,7 @@ int main()
 			break;
 			
 			case 11:
+			/*
     		cout<<"\tC++ For Loop\n\n";
     		cout<<"\tWhen you know exactly how many times you want to loop through a block of code, use the for loop "<<endl;
 			cout<<"\tinstead of a while loop\n"<<endl;
@@ -606,6 +609,7 @@ int main()
 			cout<<"\t    }"<<endl;
 			cout<<"\t  }";
 			cout<<"\n";
+			*/
 		    cout<<"++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n";
 		cout<<"\t\t\t\t*******************************************************************\n";
 		cout<<"\t\t\t\t*******************************************************************\n";
